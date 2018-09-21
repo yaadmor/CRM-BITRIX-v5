@@ -1,0 +1,20 @@
+<html>
+<body>
+  <script>
+    function btnClick() {
+      const selectEl = document.getElementById('select'),
+        iframeEl = document.getElementById('iframe');
+      iframe.setAttribute('src', selectEl.value + '.php');
+    }
+  </script>
+  <select id="select">
+    <option value="doc-js">doc-js</option>
+    <option value="http_redirect">http_redirect</option>
+    <option value="js">js</option>
+    <option value="header">header</option>
+    <option value="parent-js">parent-js</option>
+  </select>
+  <button onclick="btnClick()">Click</button>
+  <iframe id="iframe"></iframe>
+</body>
+</html>
