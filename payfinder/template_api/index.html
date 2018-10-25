@@ -1,0 +1,22 @@
+<html>
+<body>
+  Target:
+  <select id="select" onchange="targeting()">
+    <option value="">this window</option>
+    <option value="popup">popup</option>
+    <option value="iframe">iframe</option>
+  </select>
+  <a id="paying" href="paying.php">
+    <img style="vertical-align:middle"src=https://merchants.Pay-finder.com/Templates/Tmp_Payfinder/images/logo.png height="25px"alt="PSP"
+    >
+  </a>
+  <script>
+    function targeting(){
+      const a = document.getElementById('paying'),
+        select = document.getElementById('select'),
+        url = "paying.php?"
+      a.setAttribute('href', url + select.value);
+    }
+  </script>
+</body>
+</html>

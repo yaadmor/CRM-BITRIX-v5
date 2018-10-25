@@ -1,0 +1,53 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"CRM Lead", 
+		"/crm/lead", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"CRM", 
+		"/crm/", 
+		Array(), 
+		Array(), 
+		"CBXFeatures::IsFeatureEnabled('crm') && CModule::IncludeModule('crm') && CCrmPerms::IsAccessEnabled()" 
+	),
+	Array(
+		"Company", 
+		"/about/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Documents", 
+		"/docs/", 
+		Array(), 
+		Array(), 
+		"CBXFeatures::IsFeatureEnabled('CommonDocuments')" 
+	),
+	Array(
+		"Services", 
+		"/services/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Employees", 
+		"/company/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Workgroups", 
+		"/workgroups/", 
+		Array(), 
+		Array(), 
+		"CBXFeatures::IsFeatureEnabled('Workgroups')" 
+	)
+);
+?>
